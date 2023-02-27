@@ -2,9 +2,7 @@
  
  <br/>
 <p align="center">
-  <a href="https://github.com/Jan-23-Liftoff-KC/Team_ChatGPT_FrontEnd_Full">
-    <img src="https://i.imgur.com/fMJHcxx.png" alt="Logo" width="80" height="80">
-  </a>
+  # ![app name-2](https://user-images.githubusercontent.com/98275292/208930594-7a5ceb37-8125-449d-83b3-02e7e64bb868.svg)
 
   <h3 align="center">KC Business Project</h3>
 
