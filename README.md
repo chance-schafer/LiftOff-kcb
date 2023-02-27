@@ -34,10 +34,10 @@ Our technology stack consists of JavaScript, React, Redux, and React Bootstrap f
 
 ## Authors
 
-[Belen Garcia Martinez](https://github.com/93Belen/)
-[Chance Schafer](https://github.com/chance-schafer/)
-[Ian Gustafson](https://github.com/IGustafson30/)
-[Brandon Zamorano](https://github.com/BrandonWebDev/)
+- [Belen Garcia Martinez](https://github.com/93Belen/)
+- [Chance Schafer](https://github.com/chance-schafer/)
+- [Ian Gustafson](https://github.com/IGustafson30/)
+- [Brandon Zamorano](https://github.com/BrandonWebDev/)
 
 
 <h2>Languages and Tools</h2>
