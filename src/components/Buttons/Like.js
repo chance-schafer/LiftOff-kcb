@@ -17,7 +17,7 @@ export const Like = (props) => {
     const likeBusiness = async () => {
       try {
         const response = await fetch(
-          `http://localhost:8080/api/businesses/${id}/like`,
+          `https://liftoff-kcb-backend-production-bb79.up.railway.app/api/businesses/${id}/like`,
           {
             headers: {
               "Content-type": "application/json",
@@ -31,7 +31,7 @@ export const Like = (props) => {
           throw new Error("Network response was not ok");
         }
 
-        //When clicking like getting error - SyntaxError: Unexpected end of JSON input - Response from server {type: 'cors', url: 'http://localhost:8080/api/businesses/1/like', redirected: false, status: 204, ok: true, …} The likes are appearing in the database
+        //When clicking like getting error - SyntaxError: Unexpected end of JSON input - Response from server {type: 'cors', url: 'liftoff-kcb-backend-production-bb79.up.railway.app/api/businesses/1/like', redirected: false, status: 204, ok: true, …} The likes are appearing in the database
         if (response.status !== 204) {
           const data = await response.json();
           console.log("Response was ok!", data);
@@ -46,7 +46,12 @@ export const Like = (props) => {
   };
 
   return (
-    <Button onTouchEnd={onClickLike} onClick={onClickLike} id="likeButton" variant="outline-warning">
+    <Button
+      onTouchEnd={onClickLike}
+      onClick={onClickLike}
+      id="likeButton"
+      variant="outline-warning"
+    >
       Like
     </Button>
   );

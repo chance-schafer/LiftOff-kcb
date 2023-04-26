@@ -1,20 +1,22 @@
-export const getLikedBusinesses = async(jwt) => {
-    try{
+const jwt = localStorage.getItem("jwt");
 
-        const response = await fetch("http://localhost:8080/api/user/getliked", {
-            headers: {
-                "Authorization": "Bearer " + jwt
-            }
-        });
-        if(response.ok){
-            const jsonResponse = response.json();
-            return jsonResponse;
-        }
-        else {
-            console.log("auth failed");
-        }
-
-    } catch(e){
-        console.log(e);
+export const getLikedBusinesses = async () => {
+  try {
+    const response = await fetch(
+      "https://liftoff-kcb-backend-production-bb79.up.railway.app/api/users/me/liked-businesses",
+      {
+        headers: {
+          "Content-type": "application/json",
+          "Cache-Control": "no-cache",
+          Authorization: "Bearer " + jwt,
+        },
+      }
+    );
+    if (response.ok) {
+      const jsonResponse = response.json();
+      return jsonResponse;
     }
-}
+  } catch (e) {
+    console.log(e);
+  }
+};
