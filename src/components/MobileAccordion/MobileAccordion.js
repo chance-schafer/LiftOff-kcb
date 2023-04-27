@@ -15,7 +15,7 @@ function MobileAccordion() {
     dispatch({ type: "filters/toggleFilter", payload: id });
   };
   return (
-    <Accordion class="accordion" className="filter-button">
+    <Accordion className="accordion" className="filter-button">
       <Accordion.Item eventKey="0">
         <Accordion.Header>Choose county</Accordion.Header>
         <Accordion.Body>
