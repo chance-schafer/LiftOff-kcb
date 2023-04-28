@@ -1,12 +1,11 @@
-#logoDecor{
-    height: 8rem;
+#logoDecor {
+  height: 8rem;
 }
 
-
-@media screen and (max-width: 900px) {
-    #logoDecor {
-        display: none;
-        height: 0;
-        width: 0;
-    }
+@media screen and (max-width: 991px) {
+  #logoDecor {
+    display: none;
+    height: 0;
+    width: 0;
+  }
 }

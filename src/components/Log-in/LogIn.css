@@ -1,59 +1,59 @@
-@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap");
 
-#log-in{
-    box-sizing: border-box;
-    width: 40vw;
-    height: 50vh;
-    margin: 2% 20%;
-    position: absolute;
-    max-width: 550px;
-    max-height: 550px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+#log-in {
+  box-sizing: border-box;
+  width: 40vw;
+  height: 50vh;
+  margin: 2% 20%;
+  position: absolute;
+  max-width: 550px;
+  max-height: 550px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-#svg-login{
-    position: absolute;
-    z-index: 0;
-    width: 100%;
-    max-width: 550px;
+#svg-login {
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+  max-width: 550px;
 }
 
-#log-in-form{
-    position: relative;
-    z-index: 3;
-    width: 80%;
-    max-width: 500px;
-    text-align: center;
-    height: 50vh;
-    max-height: 550px;
-    padding: 10% 3% 12% 0;
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
+#log-in-form {
+  position: relative;
+  z-index: 3;
+  width: 80%;
+  max-width: 500px;
+  text-align: center;
+  height: 50vh;
+  max-height: 550px;
+  padding: 10% 3% 12% 0;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
 }
 
 #logInTitle {
-    font-size: 2rem;
-    font-family: 'Fugaz One';
-    color: #AA283C;
-    padding-bottom: 6%;
+  font-size: 2rem;
+  font-family: "Fugaz One";
+  color: #aa283c;
+  padding-bottom: 6%;
 }
 #signUpTitle {
-    font-size: 2rem;
-    font-family: 'Fugaz One';
-    color: #AA283C;
-    padding-bottom: 3%;
+  font-size: 2rem;
+  font-family: "Fugaz One";
+  color: #aa283c;
+  padding-bottom: 3%;
 }
 
-#role-group{
-    text-align: left;
+#role-group {
+  text-align: left;
 }
 
-@media screen and (max-width: 900px) {
-    #log-in{
+@media screen and (max-width: 991px) {
+  #log-in {
     box-sizing: border-box;
     width: 90vw;
     height: fit-content;
@@ -64,29 +64,29 @@
     justify-content: center;
     margin-top: -30%;
     padding: 0;
-    }
-    #svg-login{
-        display: none;
-    }
-    #log-in-form{
-        width: 100%;
-        max-width: 90vw;
-        text-align: center;
-        height: 90vh;
-        padding: 0;
-    }
-    #sign-up-link{
-        color: white;
-    }
-    #logInTitle{
-        color: white;
-        text-align: start;
-    }
-    #signUpTitle{
-        color: white;
-        text-align: start;
-    }
-    .form-check-label{
-        color: white;
-    }
+  }
+  #svg-login {
+    display: none;
+  }
+  #log-in-form {
+    width: 100%;
+    max-width: 90vw;
+    text-align: center;
+    height: 90vh;
+    padding: 0;
+  }
+  #sign-up-link {
+    color: white;
+  }
+  #logInTitle {
+    color: white;
+    text-align: start;
+  }
+  #signUpTitle {
+    color: white;
+    text-align: start;
+  }
+  .form-check-label {
+    color: white;
+  }
 }

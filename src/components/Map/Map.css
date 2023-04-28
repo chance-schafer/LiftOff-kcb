@@ -30,7 +30,19 @@
   stroke: #aa283c;
 }
 
-@media screen and (max-width: 900px) {
+.countyClicked {
+  fill: #aa283c;
+}
+
+.ownerClicked rect {
+  fill: #aa283c;
+}
+
+.businessClicked rect {
+  stroke: #aa283c;
+}
+
+@media screen and (max-width: 991px) {
   #map {
     background: black;
     display: none;
