@@ -3,7 +3,7 @@
 }
 
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 991px) {
     #logoDecor {
         display: none;
         height: 0;

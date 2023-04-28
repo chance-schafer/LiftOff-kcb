@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import {
   Container,
   FloatingLabel,
@@ -9,11 +9,9 @@ import {
   Col,
   FormSelect,
   FormCheck,
-  Button,
 } from "react-bootstrap";
-import { useDispatch, useSelector } from "react-redux";
+import { useSelector } from "react-redux";
 import {
-  selectbusinessToEdit,
   selectEditingAdding,
 } from "../../state-redux/Store/Selectors";
 import { DoneAdding } from "../Buttons/DoneAdding";
@@ -22,7 +20,6 @@ import "./Form.css";
 
 export const FormElement = () => {
   const editingAdding = useSelector(selectEditingAdding);
-  const [selectedOwnerTypes, setSelectedOwnerTypes] = useState([]);
   const [form, setForm] = useState({});
   const [errors, setErrors] = useState({});
   const [disabled, setDisabled] = useState(true);
@@ -61,7 +58,6 @@ export const FormElement = () => {
       businessStreetNumber,
       businessDescription,
       businessWebsiteLink,
-      businessIdentity,
     } = form;
     const newErrors = {};
     // ---------------------- Business Name ----------------------
@@ -154,7 +150,7 @@ export const FormElement = () => {
       newErrors.businessWebsiteLink =
         "Website link must be between 2-100 characters in length.";
     else if (
-      !/^(https?:\/\/)?([\w\d]+\.)+[\w]+([\/\w\d-]+)*(\?[\w\d]+=[\w\d]+)*(\&[\w\d]+=[\w\d]+)*\/?$/i.test(
+      !/^(https?:\/\/)?([\w\d]+\.)+[\w]+([\w\d-]+)*(\?[\w\d]+=[\w\d]+)*([\w\d]+=[\w\d]+)*\/?$/i.test(
         businessWebsiteLink
       )
     )

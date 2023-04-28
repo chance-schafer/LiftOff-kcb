@@ -1,13 +1,11 @@
 import { useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { filtersSelected } from "../../state-redux/Store/Selectors";
+import { useDispatch } from "react-redux";
 import "./Map.css";
 
 export const Map = () => {
   // onClick events adds info that changes displayed in Redux state
   const [clickedItems, setClickedItems] = useState([]);
   const dispatch = useDispatch();
-  const selectedFilters = useSelector(filtersSelected);
   const handleClick = (id) => {
     const index = clickedItems.indexOf(id);
     if (index === -1) {

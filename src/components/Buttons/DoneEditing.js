@@ -1,8 +1,7 @@
 import { Button } from 'react-bootstrap';
 import './Buttons.css';
 import { useDispatch, useSelector } from 'react-redux';
-import { selectbusinessToEdit, selectJwt } from '../../state-redux/Store/Selectors';
-import { useEffect } from 'react';
+import { selectbusinessToEdit } from '../../state-redux/Store/Selectors';
 
 export const DoneEditing = () => {
     const jwt = localStorage.getItem("jwt");
@@ -18,7 +17,6 @@ export const DoneEditing = () => {
     const county = document.getElementById('county').value;
     const city = document.getElementById('business-city').value;
     const zipcode = document.getElementById('zipcode').value;
-    const addressDescription = document.getElementById('address-description').value;
     const description = document.getElementById('description').value;
     const website = document.getElementById('website').value;
 
