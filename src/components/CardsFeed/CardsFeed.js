@@ -60,7 +60,7 @@ export const CardsFeed = () => {
     getLikedBusinesses().then((response) => {
       dispatch({ type: "liked/changeState", payload: response });
     });
-  }, [businesses]);
+  });
 
   // function to filter and display cards based on selected filters
   const displayCards = () => {
