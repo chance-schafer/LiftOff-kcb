@@ -1,5 +1,4 @@
-import { ThemeProvider, Row, Col } from "react-bootstrap";
-import { useSelector } from "react-redux";
+import { ThemeProvider } from "react-bootstrap";
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
 import { BusinessOwner } from "./components/BusinessOwner/BusinessOwner";
@@ -9,7 +8,6 @@ import { PrivateRouteUser } from "./components/PrivateRoutes/PrivateRouteUser";
 import { PrivateRouteOwner } from "./components/PrivateRoutes/PrivateRouteOwner";
 import {
   getAllBusinesses,
-  getBusinessFromBackEnd,
 } from "./call-backend/getAllBusinesses";
 
 import { useDispatch } from "react-redux";
@@ -21,10 +19,6 @@ function App() {
   getAllBusinesses().then((response) => {
     dispatch({ type: "businessesUnmodified/changeState", payload: response });
   });
-  // fetch all businesses here and store them in redux
-  getBusinessFromBackEnd().then((response) =>
-    dispatch({ type: "businesses/changeState", payload: response })
-  );
 
   return (
     <div className="App">

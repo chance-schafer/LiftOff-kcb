@@ -62,7 +62,7 @@
   padding: 30px 20px;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 991px) {
   #signInButton {
     align-self: flex-end;
     background: #aa283c;

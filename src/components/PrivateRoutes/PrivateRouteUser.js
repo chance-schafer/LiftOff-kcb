@@ -7,7 +7,6 @@ export const PrivateRouteUser = () => {
     const jwt = localStorage.getItem("jwt");
     const role = localStorage.getItem("role")
 
-    //console.log(decoded)
     const d = new Date(0);
     try{
         // Decode jwt to get expiration date (set to one hour)

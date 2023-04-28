@@ -5,7 +5,6 @@ import { DeleteLiked } from "../Buttons/DeleteLiked";
 
 export const LikedCard = (props) => {
     const info = props.info;
-    //console.log(props.info)
     const displayAllOwnerTypes = () => {
         let arrayCol = [];
         info.ownerTypes.forEach((owner, index) => {

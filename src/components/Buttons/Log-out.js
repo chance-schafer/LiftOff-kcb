@@ -34,7 +34,7 @@ export const LogOut = () => {
           rx="8.5"
           fill="#AA283C"
           stroke="black"
-          stroke-width="3"
+          strokeWidth="3"
         />
         <mask id="path-2-inside-1_239_116" fill="white">
           <path d="M15.7772 9.57568H30.5213V29.5757H15.7772V9.57568Z" />

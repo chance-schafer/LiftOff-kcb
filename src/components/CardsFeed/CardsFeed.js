@@ -23,6 +23,7 @@ export const CardsFeed = () => {
   const getAllBusinesses = useSelector(allBusinesses);
 
   // fetch liked businesses for current user
+
   const getLikedBusinesses = async () => {
     try {
       const response = await fetch(

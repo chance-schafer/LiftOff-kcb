@@ -3,7 +3,6 @@ import "./Buttons.css";
 import { useDispatch } from "react-redux";
 import React from "react";
 import { useNavigate } from "react-router";
-import { getLikedBusinesses } from "../../call-backend/getLikedBusinesses";
 
 // React Element => Sign-in Button
 export const SignIn = () => {
@@ -24,18 +23,21 @@ export const SignIn = () => {
 
     const callBackEndAuth = async () => {
       try {
-        const response = await fetch("http://localhost:8080/api/auth/login", {
-          headers: {
-            "Content-type": "application/json",
-          },
-          method: "post",
-          body: JSON.stringify(reqBody),
-        });
+        const response = await fetch(
+          "https://liftoff-kcb-backend-production-bb79.up.railway.app/api/auth/login",
+          {
+            headers: {
+              "Content-type": "application/json",
+            },
+            method: "post",
+            body: JSON.stringify(reqBody),
+          }
+        );
         if (response.ok) {
           const jsonResponse = response.json();
           return jsonResponse;
         } else {
-          console.log("auth failed");
+          console.log("Authentication Failed");
           window.alert("Wrong password or email");
         }
       } catch (e) {
@@ -45,10 +47,9 @@ export const SignIn = () => {
 
     const getUserInfo = async (jwt) => {
       const auth = "Bearer " + jwt.payload.accessToken;
-      console.log(auth);
       try {
         const response = await fetch(
-          "http://localhost:8080/api/users/me/roles",
+          "https://liftoff-kcb-backend-production-bb79.up.railway.app/api/users/me/roles",
           {
             headers: {
               "Content-type": "application/json",
@@ -62,7 +63,7 @@ export const SignIn = () => {
           const jsonResponse = response.json();
           return jsonResponse;
         } else {
-          console.log("jwt failed");
+          console.log("JWT Failed");
         }
       } catch (e) {
         console.log(e);

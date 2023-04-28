@@ -5,9 +5,9 @@
   width: auto;
 }
 
-@media screen and (max-width: 900px) {
- #logoName {
-   padding-top: 1.5rem;
-   padding-left: 1rem;
- }
+@media screen and (max-width: 991px) {
+  #logoName {
+    padding-top: 1.5rem;
+    padding-left: 1rem;
+  }
 }

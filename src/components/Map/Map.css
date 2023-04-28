@@ -30,7 +30,7 @@
   stroke: #aa283c;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 991px) {
   #map {
     background: black;
     display: none;
