@@ -34,6 +34,9 @@
   height: fit-content;
 }
 
+.ownerTypes-switch {
+  color: white;
+}
 @media screen and (max-width: 991px) {
   #svg {
     display: none;
@@ -56,9 +59,5 @@
     height: fit-content;
     align-self: center;
     align-content: center;
-    align-items: center;
-  }
-  #sowner {
-    color: white;
   }
 }

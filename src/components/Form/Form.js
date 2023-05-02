@@ -373,7 +373,7 @@ export const FormElement = () => {
           id="owner"
           className="mb-3 input"
         >
-          <Container>
+          <Container className="ownerTypes-switch">
             <Row>
               <Col>
                 <FormCheck
